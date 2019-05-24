@@ -44,5 +44,8 @@ python geo_visualize.py
 - geo_visualize.py(ipynb)  
   源代码
 
+## 数据源与数据说明
+https://www.kaggle.com/worldbank/world-development-indicators
+
 ## 引用
 [1] https://medium.com/datadriveninvestor/visualising-geospatial-data-with-python-d3b1c519f31
