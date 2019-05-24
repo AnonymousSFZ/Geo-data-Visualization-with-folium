@@ -1,6 +1,7 @@
 # 基于地图信息的数据可视化工具
 
 ## 前提准备
+### python 模块
 1. 安装python 3.x
 2. 使用pip安装```folium```，```pandas```
 ```
@@ -8,6 +9,11 @@ pip install folium
 pip install pandas
 ```
 其中```pandas```用于实现数据筛选处理，```folium```用于实现数据可视化。
+### 数据文件
+- world-countries.json  
+  地图信息文件
+- database.sqlite  
+  统计数据文件，下载链接：https://www.kaggle.com/worldbank/world-development-indicators
 
 ## 运行
 本项目可使用Jupyter Notebook或Python命令行运行。个人建议使用Jupyter Notebook。
@@ -32,8 +38,6 @@ python geo_visualize.py
 ### 参数说明
 - USE_JUPYTER_NB  
   是否使用Jupyter Notebook，默认为True
-- VERBOSE  
-  是否输出较多说明文本，默认为False
 - SUPPRESS_WARNING  
   是否无视警告（代码中负责数据与地图信息绑定的函数会报Future Warning），默认为True
 ### 文件说明
@@ -43,6 +47,9 @@ python geo_visualize.py
   程序预期输出
 - geo_visualize.py(ipynb)  
   源代码
+  
+## 更新
+最新版本为GDV_Object_Oriented.py，针对面向对象对原代码进行重构
 
 ## 数据源与数据说明
 https://www.kaggle.com/worldbank/world-development-indicators
